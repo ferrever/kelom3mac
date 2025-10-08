@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macnyoss</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="foto/logo2.png" alt="Macnyoss Logo">
+        </div>
+        <ul>
+            <li><a href="#home" class="active" onclick="showMenu('home')">Home</a></li>
+            <li><a href="#about" onclick="showMenu('about')">About US</a></li>
+            <li><a href="#content" onclick="showMenu('content')">Content</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <section id="home" class="menu-section">
+            <div class="centered-logo">
+                <img src="foto/logo1.png" alt="Logo" class="landing-logo">
+            </div>
+            <div class="social-links">
+                <a href="#"><img src="foto/sosmed2.svg.png" alt="Instagram"></a>
+                <a href="#"><img src="foto/sosmed3.png" alt="TikTok"></a>
+            </div>
+        </section>
+
+        <section id="about" class="menu-section" style="display:none;">
+            <div class="banner-container">
+                <img src="foto/banner1.jpeg" alt="About Macnyoss" class="banner-img">
+            </div>
+            
+            <div class="company-info">
+                <h2>Selamat datang di Macnyoss!</h2>
+                <p>Kami adalah UMKM yang bergerak di bidang kuliner ringan, khususnya olahan makaroni kriuk dengan cita rasa khas yang bikin nagihhh!</p>
+                <p>Macnyoss hadir dari semangat sederhana: menciptakan camilan yang bukan hanya enak, tapi juga membawa kebahagiaan di setiap gigitannya. Kami percaya bahwa rasa yang nikmat lahir dari proses yang penuh dedikasi - mulai dari pemilihan bahan baku terbaik, pengolahan yang higienis, hingga pengemasan yang menarik dan ramah konsumen.</p>
+                <p>Di balik setiap bungkus Macnyoss, ada tim kecil yang bekerja dengan sepenuh hati untuk memastikan setiap produk sampai ke tangan pelanggan dalam kualitas terbaik.</p>
+            </div>
+            
+            <div class="divider-line"></div>
+            
+            <div class="supervisor-card">
+                <h3>Inkreswari Retno Hardini, S.Kom, M.T - Dosen Pembimbing</h3>
+                <p>Mata Kuliah Search Engine Optimization</p>
+            </div>
+            
+            <div class="profile-card highlight-card">
+                <img src="foto/fotodiri1.jpeg" class="profile-img" alt="Siti Nurlaela">
+                <div>
+                    <h3>Siti Nurlaela - Owner</h3>
+                    <p>Sebagai pendiri dan pemimpin utama, Siti bertanggung jawab atas seluruh kegiatan operasional Macnyoss. Beliau mengambil keputusan strategis dalam hal produksi, pemasaran, dan keuangan. Dengan kepemimpinannya, Macnyoss terus berkembang menjadi merek camilan yang digemari banyak orang.</p>
+                </div>
+            </div>
+            <div class="profile-card">
+                <img src="foto/fotodiri2.jpeg" class="profile-img" alt="Yeni Hesti Verawati Manurung">
+                <div>
+                    <h3>Yeni Hesti Verawati Manurung - Asisten Produksi</h3>
+                    <p>Yeni berperan penting menjaga kelancaran proses produksi. Ia memastikan setiap makaroni yang diproduksi memiliki rasa dan tekstur yang konsisten. Selain itu, Yeni juga mengatur jadwal produksi serta memastikan ketersediaan bahan baku agar proses tetap efisien.</p>
+                </div>
+            </div>
+            <div class="profile-card">
+                <img src="foto/fotodiri3.jpeg" class="profile-img" alt="Syifa Aulia Azzahra">
+                <div>
+                    <h3>Syifa Aulia Azzahra - Finance</h3>
+                    <p>Syifa bertanggung jawab atas pengelolaan keuangan perusahaan. Ia mencatat arus kas, menyusun laporan keuangan, dan mengatur anggaran pembelian bahan maupun promosi. Dengan ketelitiannya, Macnyoss dapat terus berjalan secara stabil dan terukur.</p>
+                </div>
+            </div>
+            <div class="profile-card">
+                <img src="foto/fotodiri4.jpeg" class="profile-img" alt="Muhammad Ferry Hidayat">
+                <div>
+                    <h3>Muhammad Ferry Hidayat - Kepala Produksi</h3>
+                    <p>Ferry memimpin tim dapur yang menjadi jantung dari Macnyoss. Ia memastikan proses pembuatan makaroni berjalan sesuai standar kualitas dan kebersihan. Mulai dari penggunaan alat hingga pengawasan rasa, semuanya dilakukan dengan penuh tanggung jawab agar setiap produk tetap "kriuknya bikin nagihhh!".</p>
+                </div>
+            </div>
+            <div class="profile-card">
+                <img src="foto/fotodiri5.jpeg" class="profile-img" alt="Raditya Praba Junior">
+                <div>
+                    <h3>Raditya Praba Junior - Marketing</h3>
+                    <p>Raditya adalah sosok di balik promosi dan branding Macnyoss. Ia mengelola media sosial, membuat strategi kampanye digital, serta memantau tren pasar agar Macnyoss selalu relevan dan diminati. Tujuannya satu: menjadikan Macnyoss camilan pilihan utama semua kalangan!</p>
+                </div>
+            </div>
+            <div class="profile-card">
+                <img src="foto/fotodiri6.jpeg" class="profile-img" alt="Mando Silaen">
+                <div>
+                    <h3>Mando Silaen - Distribusi & Logistik</h3>
+                    <p>Mando memastikan setiap produk Macnyoss sampai ke tangan pelanggan dengan cepat dan aman. Ia mengatur pengemasan, pengiriman, dan ketersediaan stok di berbagai titik penjualan. Hubungan baik dengan mitra pengantaran dan reseller menjadi kunci kelancaran distribusi Macnyoss di berbagai daerah.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="content" class="menu-section" style="display:none;">
+            <div class="product-list">
+                <div class="product-card" onclick="openModal('foto/fotoproduk1.jpeg', 'Original', 'Rp. 10.000')">
+                    <img src="foto/fotoproduk1.jpeg" class="product-img">
+                    <h4>Original</h4>
+                    <p class="price">Rp. 10.000</p>
+                </div>
+                <div class="product-card" onclick="openModal('foto/fotoproduk2.jpeg', 'Spicy', 'Rp. 10.000')">
+                    <img src="foto/fotoproduk2.jpeg" class="product-img">
+                    <h4>Spicy</h4>
+                    <p class="price">Rp. 10.000</p>
+                </div>
+                <div class="product-card" onclick="openModal('foto/fotoproduk3.jpeg', 'Special', 'Rp. 10.000')">
+                    <img src="foto/fotoproduk3.jpeg" class="product-img">
+                    <h4>Special</h4>
+                    <p class="price">Rp. 10.000</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="others" class="menu-section" style="display:none;">
+        </section>
+    </div>
+
+    <div id="productModal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <img id="modalImage" src="" alt="Product">
+            <h2 id="modalTitle"></h2>
+            <p id="modalPrice" class="modal-price"></p>
+        </div>
+    </div>
+
+    <script>
+        function showMenu(menu) {
+            document.querySelectorAll('.menu-section').forEach(sec => sec.style.display = 'none');
+            document.getElementById(menu).style.display = 'block';
+            document.querySelectorAll('nav ul li a').forEach(a => a.classList.remove('active'));
+            document.querySelector('nav ul li a[href="#'+menu+'"]').classList.add('active');
+        }
+        
+        function openModal(imageSrc, title, price) {
+            const modal = document.getElementById('productModal');
+            const modalImage = document.getElementById('modalImage');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalPrice = document.getElementById('modalPrice');
+            
+            modalImage.src = imageSrc;
+            modalTitle.textContent = title;
+            modalPrice.textContent = price;
+            
+            modal.classList.add('show');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeModal() {
+            const modal = document.getElementById('productModal');
+            modal.classList.remove('show');
+            document.body.style.overflow = 'auto';
+        }
+        
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+        
+        showMenu('home');
+    </script>
+</body>
+</html>

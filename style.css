@@ -1,0 +1,382 @@
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: #fceddb;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: #fde7bb;
+    display: flex;
+    align-items: center;
+    padding: 10px 40px;
+    border-bottom: 2px solid #ebdbb5;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 70px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    font-weight: 700;
+    color: #1f2328;
+    text-decoration: none;
+    font-size: 1.4em;
+    padding: 8px 20px;
+    border-radius: 16px;
+    transition: background 0.2s, color 0.2s;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    background: #ffcf60;
+    color: #fff;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 24px;
+}
+
+.centered-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.landing-logo {
+    width: 480px;
+    height: auto;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.social-links a img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.social-links a img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(255, 207, 96, 0.3);
+}
+
+.banner-container {
+    margin-bottom: 32px;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    border-radius: 24px;
+    box-shadow: 0 4px 12px rgba(255, 207, 96, 0.15);
+}
+
+.company-info {
+    background: #fff8ee;
+    padding: 32px;
+    border-radius: 24px;
+    margin: 32px 0;
+    box-shadow: 0 2px 8px rgba(255, 207, 96, 0.10);
+    text-align: center;
+}
+
+.company-info h2 {
+    color: #1f2328;
+    font-size: 1.8em;
+    margin: 0 0 20px 0;
+    font-weight: bold;
+}
+
+.company-info p {
+    color: #1f2328;
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin: 16px 0;
+    text-align: justify;
+}
+
+.divider-line {
+    height: 4px;
+    background: #ffcf60;
+    border-radius: 2px;
+    margin: 48px auto;
+    width: 100%;
+    box-shadow: 0 2px 6px rgba(255, 207, 96, 0.3);
+}
+
+.supervisor-card {
+    background: #dc3545;
+    padding: 32px;
+    border-radius: 24px;
+    margin: 32px 0;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(220, 53, 69, 0.3);
+}
+
+.supervisor-card h3 {
+    color: #ffffff;
+    font-size: 1.6em;
+    margin: 0 0 12px 0;
+    font-weight: bold;
+}
+
+.supervisor-card p {
+    color: #ffffff;
+    font-size: 1.2em;
+    margin: 0;
+    font-weight: 500;
+}
+
+@media (max-width:700px){
+    .supervisor-card {
+        padding: 24px;
+    }
+    
+    .supervisor-card h3 {
+        font-size: 1.3em;
+    }
+    
+    .supervisor-card p {
+        font-size: 1em;
+    }
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    background: #fae6c5;
+    margin: 24px 0;
+    border-radius: 24px;
+    padding: 24px;
+    gap: 32px;
+    box-shadow: 0 2px 8px rgba(255, 207, 96, 0.08);
+}
+
+.profile-card .profile-img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #ebdbb5;
+    background: #a67c30;
+    box-shadow: 0 2px 8px rgba(255, 207, 96, 0.12);
+}
+
+.profile-card.highlight-card {
+    background: #ffcf60;
+}
+
+.product-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+.product-card {
+    background: #fff8ee;
+    border-radius: 24px;
+    padding: 24px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(255, 207, 96, 0.10);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 207, 96, 0.25);
+}
+
+.product-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 18px;
+    background: #fde7bb;
+    transition: transform 0.3s;
+}
+
+.product-card:hover .product-img {
+    transform: scale(1.1);
+}
+
+h3, h4 {
+    color: #1f2328;
+    margin: 16px 0 8px 0;
+    font-weight: bold;
+}
+
+.price {
+    color: #1f2328;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.menu-section {
+    animation: fadein 0.7s;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    animation: fadeIn 0.3s;
+    overflow: auto;
+}
+
+.modal.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #fff8ee;
+    padding: 40px;
+    border-radius: 24px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+    animation: slideUp 0.4s;
+    box-shadow: 0 10px 40px rgba(255, 207, 96, 0.3);
+}
+
+.modal-content img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    object-fit: cover;
+}
+
+.modal-content h2 {
+    color: #1f2328;
+    font-size: 2em;
+    margin: 16px 0;
+    font-weight: bold;
+}
+
+.modal-price {
+    color: #ffcf60;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 16px 0;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+    transition: color 0.3s;
+}
+
+.close:hover {
+    color: #ffcf60;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width:700px){
+    .profile-card{
+        flex-direction:column;
+        text-align:center;
+    }
+    .profile-card .profile-img {
+        margin-bottom:24px;
+    }
+    .product-list{
+        flex-direction:column;
+        align-items:center;
+    }
+    .social-links {
+        gap: 16px;
+    }
+    .social-links a img {
+        width: 60px;
+        height: 60px;
+    }
+    .company-info {
+        padding: 24px;
+    }
+    .company-info h2 {
+        font-size: 1.5em;
+    }
+    .company-info p {
+        font-size: 1em;
+        text-align: left;
+    }
+    .divider-line {
+        margin: 32px auto;
+    }
+    .modal-content {
+        padding: 24px;
+        width: 85%;
+    }
+    .modal-content h2 {
+        font-size: 1.5em;
+    }
+    .modal-price {
+        font-size: 1.4em;
+    }
+    .close {
+        top: 10px;
+        right: 15px;
+        font-size: 30px;
+    }
+}
