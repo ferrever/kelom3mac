@@ -3,133 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Macnyoss</title>
+
+    <!-- TITLE TAG – keyword + brand (On-Page / Kelompok 2, Keyword Research / Kelompok 1) [file:1][file:2] -->
+    <title>Macnyoss - Makaroni Kriuk Pedas, Camilan UMKM Enak di Jakarta</title>
+
+    <!-- META DESCRIPTION – 150–160 karakter, ada keyword & CTA (On-Page) [file:2] -->
+    <meta name="description" content="Macnyoss adalah UMKM makaroni kriuk pedas dan original dengan rasa gurih nagih. Pesan makaroni kriuk enak untuk ngemil, oleh-oleh, dan reseller di Jakarta sekarang.">
+
+    <!-- KEYWORD / TOPIC (tidak wajib untuk Google, tapi bisa untuk dokumentasi / plugin) [file:1] -->
+    <meta name="keywords" content="makaroni kriuk, makaroni pedas, camilan kriuk, snack pedas Jakarta, UMKM makaroni, Macnyoss">
+
+    <!-- OPEN GRAPH (bantu share sosial & CTR, relevan dengan submission / social bookmark) [file:3] -->
+    <meta property="og:title" content="Macnyoss - Makaroni Kriuk Pedas, Camilan UMKM Enak di Jakarta">
+    <meta property="og:description" content="Camilan makaroni kriuk pedas dan original yang gurih, kriuk, dan bikin nagih. Pesan sekarang via WhatsApp atau media sosial Macnyoss.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.macnyoss.com/">
+    <meta property="og:image" content="https://www.macnyoss.com/foto/banner1.jpeg">
+
+    <!-- CANONICAL URL untuk menghindari duplikat konten (On-Page) [file:2] -->
+    <link rel="canonical" href="https://www.macnyoss.com/">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- STRUCTURED DATA LOCAL BUSINESS (On-Page + Local SEO insight dari submission) [file:2][file:3] -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Macnyoss",
+      "image": "https://www.macnyoss.com/foto/logo1.png",
+      "url": "https://www.macnyoss.com/",
+      "telephone": "+62-812-0000-0000",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Jakarta",
+        "addressRegion": "DKI Jakarta",
+        "addressCountry": "ID"
+      },
+      "priceRange": "Rp10.000 - Rp50.000",
+      "servesCuisine": "Camilan, Makaroni Kriuk"
+    }
+    </script>
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <img src="foto/logo2.png" alt="Macnyoss Logo">
-        </div>
-        <ul>
-            <li><a href="#home" class="active" onclick="showMenu('home')">Home</a></li>
-            <li><a href="#about" onclick="showMenu('about')">About US</a></li>
-            <li><a href="#content" onclick="showMenu('content')">Content</a></li>
-        </ul>
-    </nav>
-    <div class="container">
+    <!-- HEADER + NAV SEMANTIK (On-Page / struktur) [file:2] -->
+    <header>
+        <nav aria-label="Navigasi utama">
+            <div class="logo">
+                <!-- ALT TEXT deskriptif + keyword ringan (Optimasi Gambar) [file:2] -->
+                <img src="foto/logo2.png" alt="Logo Macnyoss camilan makaroni kriuk" class="logo-img">
+                <span class="logo-text">Macnyoss</span>
+            </div>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="content.html">Produk</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- SECTION HOME – ada H1, keyword utama, CTA (Keyword placement / On-Page) [file:1][file:2] -->
         <section id="home" class="menu-section">
             <div class="centered-logo">
-                <img src="foto/logo1.png" alt="Logo" class="landing-logo">
+                <img src="foto/logo1.png" alt="Kemasan produk Macnyoss makaroni kriuk pedas" class="landing-logo">
             </div>
-            <div class="social-links">
-                <a href="#"><img src="foto/sosmed2.svg.png" alt="Instagram"></a>
-                <a href="#"><img src="foto/sosmed3.png" alt="TikTok"></a>
+
+            <h1>Makaroni Kriuk Pedas Macnyoss: Camilan Gurih Nagih dari UMKM Jakarta</h1>
+            <p>Macnyoss adalah brand camilan makaroni kriuk pedas dan original dengan tekstur renyah serta rasa bumbu yang kuat, cocok untuk teman belajar, kerja, maupun nonton bareng keluarga.</p>
+            <p>Dengan bahan berkualitas dan proses produksi higienis, Macnyoss siap menjadi camilan favorit kamu yang praktis, terjangkau, dan mudah dipesan secara online.</p>
+
+            <!-- CTA utama (bagus untuk CTR & konversi, juga bisa dijadikan anchor di backlink) [file:3] -->
+            <div class="cta-wrapper">
+                <a class="btn-primary" href="https://wa.me/6281200000000?text=Halo%20Macnyoss,%20saya%20mau%20pesan%20makaroni%20kriuk" target="_blank" rel="noopener nofollow">Pesan via WhatsApp</a>
+                <a class="btn-secondary" href="content.html" onclick="showMenu('content')">Lihat Varian Rasa</a>
+            </div>
+
+            <!-- Social link dengan atribut rel (submission / social bookmarking-ready) [file:3] -->
+            <div class="social-links" aria-label="Media sosial Macnyoss">
+                <a href="https://instagram.com/macnyoss" target="_blank" rel="noopener">
+                    <img src="foto/sosmed2.svg.png" alt="Ikuti Instagram Macnyoss">
+                </a>
+                <a href="https://www.tiktok.com/@macnyoss" target="_blank" rel="noopener">
+                    <img src="foto/sosmed3.png" alt="Ikuti TikTok Macnyoss">
+                </a>
             </div>
         </section>
+    </main>
 
-        <section id="about" class="menu-section" style="display:none;">
-            <div class="banner-container">
-                <img src="foto/banner1.jpeg" alt="About Macnyoss" class="banner-img">
-            </div>
-            
-            <div class="company-info">
-                <h2>Selamat datang di Macnyoss!</h2>
-                <p>Kami adalah UMKM yang bergerak di bidang kuliner ringan, khususnya olahan makaroni kriuk dengan cita rasa khas yang bikin nagihhh!</p>
-                <p>Macnyoss hadir dari semangat sederhana: menciptakan camilan yang bukan hanya enak, tapi juga membawa kebahagiaan di setiap gigitannya. Kami percaya bahwa rasa yang nikmat lahir dari proses yang penuh dedikasi - mulai dari pemilihan bahan baku terbaik, pengolahan yang higienis, hingga pengemasan yang menarik dan ramah konsumen.</p>
-                <p>Di balik setiap bungkus Macnyoss, ada tim kecil yang bekerja dengan sepenuh hati untuk memastikan setiap produk sampai ke tangan pelanggan dalam kualitas terbaik.</p>
-            </div>
-            
-            <div class="divider-line"></div>
-            
-            <div class="supervisor-card">
-                <h3>Inkreswari Retno Hardini, S.Kom, M.T - Dosen Pembimbing</h3>
-                <p>Mata Kuliah Search Engine Optimization</p>
-            </div>
-            
-            <div class="profile-card highlight-card">
-                <img src="foto/fotodiri1.jpeg" class="profile-img" alt="Siti Nurlaela">
-                <div>
-                    <h3>Siti Nurlaela - Owner</h3>
-                    <p>Sebagai pendiri dan pemimpin utama, Siti bertanggung jawab atas seluruh kegiatan operasional Macnyoss. Beliau mengambil keputusan strategis dalam hal produksi, pemasaran, dan keuangan. Dengan kepemimpinannya, Macnyoss terus berkembang menjadi merek camilan yang digemari banyak orang.</p>
-                </div>
-            </div>
-            <div class="profile-card">
-                <img src="foto/fotodiri2.jpeg" class="profile-img" alt="Yeni Hesti Verawati Manurung">
-                <div>
-                    <h3>Yeni Hesti Verawati Manurung - Asisten Produksi</h3>
-                    <p>Yeni berperan penting menjaga kelancaran proses produksi. Ia memastikan setiap makaroni yang diproduksi memiliki rasa dan tekstur yang konsisten. Selain itu, Yeni juga mengatur jadwal produksi serta memastikan ketersediaan bahan baku agar proses tetap efisien.</p>
-                </div>
-            </div>
-            <div class="profile-card">
-                <img src="foto/fotodiri3.jpeg" class="profile-img" alt="Syifa Aulia Azzahra">
-                <div>
-                    <h3>Syifa Aulia Azzahra - Finance</h3>
-                    <p>Syifa bertanggung jawab atas pengelolaan keuangan perusahaan. Ia mencatat arus kas, menyusun laporan keuangan, dan mengatur anggaran pembelian bahan maupun promosi. Dengan ketelitiannya, Macnyoss dapat terus berjalan secara stabil dan terukur.</p>
-                </div>
-            </div>
-            <div class="profile-card">
-                <img src="foto/fotodiri4.jpeg" class="profile-img" alt="Muhammad Ferry Hidayat">
-                <div>
-                    <h3>Muhammad Ferry Hidayat - Kepala Produksi</h3>
-                    <p>Ferry memimpin tim dapur yang menjadi jantung dari Macnyoss. Ia memastikan proses pembuatan makaroni berjalan sesuai standar kualitas dan kebersihan. Mulai dari penggunaan alat hingga pengawasan rasa, semuanya dilakukan dengan penuh tanggung jawab agar setiap produk tetap "kriuknya bikin nagihhh!".</p>
-                </div>
-            </div>
-            <div class="profile-card">
-                <img src="foto/fotodiri5.jpeg" class="profile-img" alt="Raditya Praba Junior">
-                <div>
-                    <h3>Raditya Praba Junior - Marketing</h3>
-                    <p>Raditya adalah sosok di balik promosi dan branding Macnyoss. Ia mengelola media sosial, membuat strategi kampanye digital, serta memantau tren pasar agar Macnyoss selalu relevan dan diminati. Tujuannya satu: menjadikan Macnyoss camilan pilihan utama semua kalangan!</p>
-                </div>
-            </div>
-            <div class="profile-card">
-                <img src="foto/fotodiri6.jpeg" class="profile-img" alt="Mando Silaen">
-                <div>
-                    <h3>Mando Silaen - Distribusi & Logistik</h3>
-                    <p>Mando memastikan setiap produk Macnyoss sampai ke tangan pelanggan dengan cepat dan aman. Ia mengatur pengemasan, pengiriman, dan ketersediaan stok di berbagai titik penjualan. Hubungan baik dengan mitra pengantaran dan reseller menjadi kunci kelancaran distribusi Macnyoss di berbagai daerah.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="content" class="menu-section" style="display:none;">
-            <div class="product-list">
-                <div class="product-card" onclick="openModal('foto/fotoproduk1.jpeg', 'Original', 'Rp. 10.000')">
-                    <img src="foto/fotoproduk1.jpeg" class="product-img">
-                    <h4>Original</h4>
-                    <p class="price">Rp. 10.000</p>
-                </div>
-                <div class="product-card" onclick="openModal('foto/fotoproduk2.jpeg', 'Spicy', 'Rp. 10.000')">
-                    <img src="foto/fotoproduk2.jpeg" class="product-img">
-                    <h4>Spicy</h4>
-                    <p class="price">Rp. 10.000</p>
-                </div>
-                <div class="product-card" onclick="openModal('foto/fotoproduk3.jpeg', 'Special', 'Rp. 10.000')">
-                    <img src="foto/fotoproduk3.jpeg" class="product-img">
-                    <h4>Special</h4>
-                    <p class="price">Rp. 10.000</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="others" class="menu-section" style="display:none;">
-        </section>
-    </div>
-
+    <!-- MODAL PRODUK -->
     <div id="productModal" class="modal" onclick="closeModal()">
         <span class="close">&times;</span>
         <div class="modal-content" onclick="event.stopPropagation()">
-            <img id="modalImage" src="" alt="Product">
+            <img id="modalImage" src="" alt="Detail produk makaroni kriuk Macnyoss">
             <h2 id="modalTitle"></h2>
             <p id="modalPrice" class="modal-price"></p>
         </div>
     </div>
 
+    <!-- FOOTER – bagus untuk internal link & NAP (Name, Address, Phone) [file:2][file:3] -->
+    <footer>
+        <p>&copy; 2025 Macnyoss - Makaroni Kriuk Pedas UMKM Jakarta.</p>
+        <p>Alamat: Jakarta, Indonesia | WhatsApp: +62 812-0000-0000</p>
+        <nav aria-label="Footer navigation">
+            <a href="about.html" onclick="showMenu('home')">Home</a> |
+            <a href="about.html" onclick="showMenu('about')">Tentang</a> |
+            <a href="content.html" onclick="showMenu('content')">Produk</a> |
+            <a href="faq.html" onclick="showMenu('faq')">FAQ</a> |
+            <a href="kontak.html" onclick="showMenu('kontak')">Kontak</a>
+        </nav>
+    </footer>
+
     <script>
         function showMenu(menu) {
             document.querySelectorAll('.menu-section').forEach(sec => sec.style.display = 'none');
-            document.getElementById(menu).style.display = 'block';
+            var target = document.getElementById(menu);
+            if (target) target.style.display = 'block';
             document.querySelectorAll('nav ul li a').forEach(a => a.classList.remove('active'));
-            document.querySelector('nav ul li a[href="#'+menu+'"]').classList.add('active');
+            var activeLink = document.querySelector('nav ul li a[href="#' + menu + '"]');
+            if (activeLink) activeLink.classList.add('active');
         }
         
         function openModal(imageSrc, title, price) {
