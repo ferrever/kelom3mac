@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://macnyoss.com/sitemap.xml
+
+Sitemap: https://ferrever.github.io/kelom3mac/sitemap.xml
