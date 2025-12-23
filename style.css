@@ -702,3 +702,10 @@ footer nav a:hover {
         font-size: 1.5rem;
     }
 }
+
+.menu-section p {
+    max-width: 900px;
+    margin: 0 auto 0.8rem auto;
+    line-height: 1.8;
+    font-size: 1rem;
+}
